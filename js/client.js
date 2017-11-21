@@ -6,7 +6,7 @@
      function setWeather() {
          var url = "https://api.openweathermap.org/data/2.5/weather?q=Heidelberg,de&APPID=cbc315d164e0c209dbe1131fa817870f&units=metric";
          $.get(url, (data, textStatus, jqXHR) => {
-             $('#weather').html(data.main.temp + "°"  + data.name);
+             $('#weather').html(data.main.temp + "° "  + data.name);
          });
      }
      setWeather();
